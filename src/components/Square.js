@@ -1,11 +1,14 @@
 import React from "react";
 
-const Square = (/*{ parameters }*/) => {
+const Square = ({value, onClick}) => {
+  const letter = value === "X" ? "square x" : "square o";
+
   return (
-    <>
-    // TODO: Create a clickable square that can contain an X or O
-    </>
+  <button className= {letter} onClick={onClick}>
+    {value}
+  </button>    
   );
 };
+
 
 export default Square;
