@@ -4,8 +4,6 @@ import Board from "./Board";
 
 
 const Game = () => {
-  // TODO: Set up states and functions: position of Xs and Os on board,
-  // step number, whether X is next, is there a win or tie, etc.
   const [board, setBoard] = useState(Array(9).fill(null));
   const [currentPlayer, setCurrentPlayer] = useState('X');
   const [gameOver, setGameOver] = useState(false);
